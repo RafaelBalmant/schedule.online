@@ -10,6 +10,7 @@ class ClientTableSeeder extends Seeder
      * @return void
      */
     public function run()
+
     {
         App\Client::create([
             'name' => 'Ana Maria Braga',

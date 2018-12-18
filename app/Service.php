@@ -10,7 +10,7 @@ class Service extends Model
 
 
 
-    public function Schedule()
+    public function schedule()
     {
         return $this->hasMany('App\Schedule');
     }

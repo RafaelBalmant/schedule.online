@@ -10,17 +10,17 @@ class Schedule extends Model
 
     public $table="schedule";
 
-    public function Services()
+    public function service()
     {
         return $this->belongsTo('App\Service');
     }
 
-    public function Users()
+    public function user()
     {
         return $this->belongsTo('App\User');
     }
 
-    public function Client()
+    public function client()
     {
         return $this->belongsTo('App\Client');
     }
