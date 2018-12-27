@@ -20,6 +20,9 @@ class CashDesk extends Migration
             $table->float('out_money');
             $table->float('starting_money');
             $table->float('final_money');
+            $table->softDeletes();
+            $table->timestamps();
+
 
         });
     }

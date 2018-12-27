@@ -1,0 +1,95 @@
+form
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.register-client
+{
+  font-size: 25px;
+  background-color: #54CDC0;
+  padding: 5px;
+  color: white;
+  font-weight: bolder;
+
+
+}
+
+.form-register-client
+{
+  background-color: #54cdc0;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 90%;
+  justify-content: space-evenly;
+  border-radius: 5px;
+
+
+}
+
+.form-register-client label
+{
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+
+}
+
+@include media-breakpoint-up(md)
+{
+  .form-register-client
+  {
+    margin-left: 200px;
+    width: 100%;
+    margin-right: 20px;
+  }
+  .register-client
+  {
+    text-align: left;
+    margin-left: 200px;
+
+  }
+
+  .form-register-client input
+
+  {
+    height: 40px;
+  }
+
+  .register-client
+  {
+
+    margin-left: 292px!important;
+
+  }
+}
+
+
+
+@include media-breakpoint-up(lg)
+{
+
+  .form-register-client
+  {
+    width: 70%;
+    padding: 10px;
+  }
+
+  .form-register-client input
+
+  {
+    height: 48px;
+  }
+
+  .register-client
+  {
+
+    margin-left: 325px;
+
+  }
+}

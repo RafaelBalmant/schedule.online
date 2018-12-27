@@ -18,6 +18,7 @@ class CreateServicesTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->float('value');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

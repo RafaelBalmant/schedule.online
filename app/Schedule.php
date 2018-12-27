@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Schedule extends Model
 {
@@ -10,6 +11,7 @@ class Schedule extends Model
 
     public $table="schedule";
 
+    use SoftDeletes;
     public function service()
     {
         return $this->belongsTo('App\Service');
