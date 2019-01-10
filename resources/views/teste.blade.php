@@ -28,6 +28,13 @@
 <div  id="div" class="div-red" onclick="getYellow()">
 
 </div>
+
+
+
+
+
+
+
 <script>
 
     var click = 0

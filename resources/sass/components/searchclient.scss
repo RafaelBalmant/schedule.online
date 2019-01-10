@@ -1,0 +1,156 @@
+.info-search-client
+{
+  color: white;
+  font-size: 26px;
+  display: flex;
+  width: 90%;
+  height: 30px;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.info-search-client p
+{
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.table-search-client th {
+  border: none;
+}
+
+.div-search-client-center
+{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.table-search-client
+{
+  background-color: #84C9C0;
+  border: none;
+  margin-top: 10px;
+  width: 90%;
+  color: #4F959B;
+  border-radius: 5px;
+}
+
+
+.table-client-name
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+
+#btn-search-form
+{
+  background-color: #63e38d;
+  border: solid 2px;
+  font-weight: bolder;
+  color: white;
+  width: 100%!important;
+}
+
+.name-table-search form
+{
+  display: flex;
+  flex-direction: column
+}
+
+
+.buttons-client-search
+{
+  margin-top: 5px;
+  background-color: #c8b1af;
+  border: solid 2px;
+  font-weight: bolder;
+}
+
+.buttons-client-search:hover
+{
+  background-color: #f6d6d3;
+}
+
+.button-client-search-new-client
+{
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.btn-clients
+{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@include media-breakpoint-up(sm)
+{
+
+  .name-table-search
+  {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+  }
+
+  #btn-search-form
+  {
+    margin-top: 0!important;
+    width: 20% !important;
+    margin-left: 10px;
+  }
+
+  .name-table-search label{
+    margin-right: 10px;
+  }
+
+  .table-client-name td
+  {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .table-client-name td div
+  {
+   margin: 0!important;
+
+  }
+
+  .name-table-search form
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+
+
+}
+
+@include media-breakpoint-up(md)
+{
+
+
+
+
+}
+
+

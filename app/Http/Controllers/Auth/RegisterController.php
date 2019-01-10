@@ -31,7 +31,7 @@ class RegisterController extends Controller
     protected $redirectTo = '/home';
 
     /**
-     * Create a new controller instance.
+     * create a new controller instance.
      *
      * @return void
      */
@@ -56,7 +56,7 @@ class RegisterController extends Controller
     }
 
     /**
-     * Create a new user instance after a valid registration.
+     * create a new user instance after a valid registration.
      *
      * @param  array  $data
      * @return \App\User

@@ -6,7 +6,7 @@ function toggleMenu() {
     {
         document.getElementById("menu").classList.add('menu-exit');
         document.getElementById("menu").classList.remove('menu-open');
-        document.getElementById('div').style.backgroundColor='#54CDC0';
+        document.getElementById('div').style.backgroundColor='#9CD8C7';
 
         div.classList.remove('fa-times');
         div.classList.add('fa-bars');

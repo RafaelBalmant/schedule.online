@@ -8,11 +8,22 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-@import "/Components/layoutdefault";
-@import "/Components/createclient";
-@import "/Components/searchclient";
+@import "components/layoutdefault";
+@import "components/createclient";
+@import "components/services";
+@import "components/searchclient";
+@import "components/detailsclient";
+@import "components/schedule";
 
-.navbar-laravel {
+.navbar-laravel
+{
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+
+
+.teste
+{
+
 }

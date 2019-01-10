@@ -1,0 +1,28 @@
+.div-services
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+.service
+{
+  width: 250px;
+  background-color: #9CD8C7;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.service p
+{
+  word-break: break-word;
+}

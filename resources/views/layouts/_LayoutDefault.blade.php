@@ -14,28 +14,17 @@
     <title>Mayara Bacellar</title>
 </head>
 <body>
-<div class="info-pag">
-    @yield('info-pag')
-</div>
-<div id="toggleMenu" onclick="toggleMenu ()" ><div id='div' class="fas fa-bars shadow-lg" style="background-color: #54CDC0;padding: 10px; border-radius: 5px"></div></div>
+<div id="toggleMenu" onclick="toggleMenu ()" ><div id='div' class="fas fa-bars shadow-lg" style="background-color: #9CD8C7;padding: 10px; border-radius: 5px"></div></div>
 <nav id="menu" class="menu-exit shadow-lg">
     <ul class="nav-bar">
         <li>
-            <a class="btn btn-menu" href=""><span class="fas fa-calendar-alt mr-2"></span>Agenda</a>
+            <a class="btn btn-menu" href="{{ route('schedule.view') }}"><span class="fas fa-calendar-alt mr-2"></span>Agenda</a>
         </li>
-            <li>
-                <a onclick="clientMenu()"  class="menu-client btn btn-menu" id="client"  href="#"><span class="fas fa-user mr-2"></span>Clientes</a>
-            </li>
-            <ul id="link-client" class="menu-client-exit">
-                <li>
-                    <a href="{{ route('client.create.view') }}" class=" btn btn-menu"><span class="fas fa-user-edit mr-2"></span>Cadastrar</a>
-                </li>
-                <li class="mt-2">
-                    <a href="{{ route('clients.show.view') }}" class=" btn btn-menu"><span class="fas fa-search mr-2 "></span>Pesquisar</a>
-                </li>
-            </ul>
         <li>
-            <a class="btn btn-menu" href=""><span class="fas fa-concierge-bell mr-2"></span>Serviços</a>
+            <a onclick="clientMenu()"  class="menu-client btn btn-menu" id="client" href="{{ route('clients.show.view') }}"><span class="fas fa-user mr-2"></span>Clientes</a>
+        </li>
+        <li>
+            <a class="btn btn-menu" href="{{ route('service.view') }}"><span class="fas fa-concierge-bell mr-2"></span>Serviços</a>
         </li>
         <li>
             <a class="btn btn-menu" href=""><span class="fas fa-cash-register mr-2"></span>Caixa</a>
@@ -45,6 +34,7 @@
         </li>
     </ul>
 </nav>
+
     @yield('content')
 @yield('js')
 </body>

@@ -1,6 +1,5 @@
 form
 {
-  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -10,26 +9,32 @@ form
 .register-client
 {
   font-size: 25px;
-  background-color: #54CDC0;
+  background-color: #84C9C0;
   padding: 5px;
   color: white;
   font-weight: bolder;
+  text-align: left;
+  height: 50px;
 
 
 }
 
 .form-register-client
 {
-  background-color: #54cdc0;
+  background-color: #84C9C0;
   padding: 5px;
   display: flex;
   flex-direction: column;
-  height: 90%;
   width: 90%;
-  justify-content: space-evenly;
   border-radius: 5px;
+  margin-top: 100px;
+  margin-bottom: 10%;
 
+}
 
+.form-register-client input
+{
+  margin-bottom: 20px;
 }
 
 .form-register-client label
@@ -44,29 +49,19 @@ form
 {
   .form-register-client
   {
-    margin-left: 200px;
-    width: 100%;
-    margin-right: 20px;
-  }
-  .register-client
-  {
-    text-align: left;
-    margin-left: 200px;
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 20px;
 
   }
 
   .form-register-client input
 
   {
-    height: 40px;
+    //height: 40px;
   }
 
-  .register-client
-  {
 
-    margin-left: 292px!important;
-
-  }
 }
 
 
@@ -76,7 +71,7 @@ form
 
   .form-register-client
   {
-    width: 70%;
+    width: 40%;
     padding: 10px;
   }
 
@@ -86,10 +81,12 @@ form
     height: 48px;
   }
 
-  .register-client
+
+  .form-register-client
   {
-
-    margin-left: 325px;
-
+    margin-top: 80px;
   }
+
+
+
 }

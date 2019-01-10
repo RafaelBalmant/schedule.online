@@ -1,0 +1,92 @@
+form
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.register-client
+{
+  font-size: 25px;
+  background-color: #84C9C0;
+  padding: 5px;
+  color: white;
+  font-weight: bolder;
+  text-align: left;
+  height: 50px;
+
+
+}
+
+.form-register-client
+{
+  background-color: #84C9C0;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-bottom: 10%;
+
+}
+
+.form-register-client input
+{
+  margin-bottom: 20px;
+}
+
+.form-register-client label
+{
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+
+}
+
+@include media-breakpoint-up(md)
+{
+  .form-register-client
+  {
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+  }
+
+  .form-register-client input
+
+  {
+    //height: 40px;
+  }
+
+
+}
+
+
+
+@include media-breakpoint-up(lg)
+{
+
+  .form-register-client
+  {
+    width: 40%;
+    padding: 10px;
+  }
+
+  .form-register-client input
+
+  {
+    height: 48px;
+  }
+
+
+  .form-register-client
+  {
+    margin-top: 80px;
+  }
+
+
+
+}
