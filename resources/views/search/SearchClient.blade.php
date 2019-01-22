@@ -1,5 +1,4 @@
 @extends('layouts._LayoutDefault')
-
 @section('content')
     <div class="btn-clients">
         <a href="{{ route('client.create.view') }}" class=" btn-new-client mr-2"><span class="fas fa-user-edit mr-2"></span>Novo Cliente</a>

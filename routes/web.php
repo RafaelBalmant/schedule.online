@@ -61,9 +61,22 @@ route::group([ 'middleware' => 'auth'] ,function(){
 
     });
 
-    route::group(['prefix'=> 'agenda'],function (){
+    Route::group(['prefix'=> 'agenda'],function (){
 
         Route::get('/', 'ScheduleController@scheduleView')->name('schedule.view');
+
+        Route::group(['prefix'=> '{month}'],function (){
+
+            Route::get('/', 'ScheduleController@scheduleMonthView')->name('schedule.month.view');
+
+            Route::group(['prefix'=> '{days}'],function (){
+
+                Route::get('/', 'ScheduleController@scheduleDetailsDayView')->name('schedule.details.day.view');
+
+            });
+        });
+
+        Route::post('', 'ScheduleController@scheduleConfirm')->name('schedule.confirm');
 
 
     });

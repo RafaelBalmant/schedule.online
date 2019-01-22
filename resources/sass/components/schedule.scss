@@ -1,92 +1,29 @@
-form
+.div-day
 {
+  background-color: #84C9C0;
+  height: 150px;
+  padding: 5px;
   width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.div-center-schedule
+{
   display: flex;
-  justify-content: center;
-
+  flex-direction: column;
+  margin-top: 30%;
 }
-
-.register-client
+.div-form-schedule-confirm
 {
-  font-size: 25px;
-  background-color: #84C9C0;
-  padding: 5px;
-  color: white;
-  font-weight: bolder;
-  text-align: left;
-  height: 50px;
-
-
-}
-
-.form-register-client
-{
-  background-color: #84C9C0;
-  padding: 5px;
   display: flex;
   flex-direction: column;
   width: 90%;
-  border-radius: 5px;
-  margin-top: 100px;
-  margin-bottom: 10%;
-
+  justify-content: center;
 }
-
-.form-register-client input
-{
-  margin-bottom: 20px;
-}
-
-.form-register-client label
+.date-schedule
 {
   color: white;
-  font-weight: bolder;
-  font-size: 15px;
-
+  font-size: 22px;
 }
 
-@include media-breakpoint-up(md)
-{
-  .form-register-client
-  {
-    width: 90%;
-    margin-top: 100px;
-    margin-bottom: 20px;
-
-  }
-
-  .form-register-client input
-
-  {
-    //height: 40px;
-  }
-
-
-}
-
-
-
-@include media-breakpoint-up(lg)
-{
-
-  .form-register-client
-  {
-    width: 40%;
-    padding: 10px;
-  }
-
-  .form-register-client input
-
-  {
-    height: 48px;
-  }
-
-
-  .form-register-client
-  {
-    margin-top: 80px;
-  }
-
-
-
-}

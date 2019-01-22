@@ -9,7 +9,7 @@
 /******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
 /******/ 		}
-/******/ 		// create a new module (and put it into the cache)
+/******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
 /******/ 			l: false,
@@ -575,7 +575,7 @@ function taskDebounce(fn) {
 var supportsMicroTasks = isBrowser && window.Promise;
 
 /**
-* create a debounced version of a method, that's asynchronously deferred
+* Create a debounced version of a method, that's asynchronously deferred
 * but called in the minimum time possible.
 *
 * @method
@@ -3897,7 +3897,7 @@ function Sizzle( selector, context, results, seed ) {
 }
 
 /**
- * create key-value caches of limited size
+ * Create key-value caches of limited size
  * @returns {function(string, object)} Returns the Object data after storing it on itself with
  *	property name the (space-suffixed) string and (if the cache is larger than Expr.cacheLength)
  *	deleting the oldest entry
@@ -6252,7 +6252,7 @@ function createOptions( options ) {
 }
 
 /*
- * create a callback list using the following parameters:
+ * Create a callback list using the following parameters:
  *
  *	options: an optional list of space-separated options that will change how
  *			the callback list behaves or a more traditional option object
@@ -8428,7 +8428,7 @@ jQuery.Event = function( src, props ) {
 			returnTrue :
 			returnFalse;
 
-		// create target properties
+		// Create target properties
 		// Support: Safari <=6 - 7 only
 		// Target should not be a text node (#504, #13143)
 		this.target = ( src.target && src.target.nodeType === 3 ) ?
@@ -8448,7 +8448,7 @@ jQuery.Event = function( src, props ) {
 		jQuery.extend( this, props );
 	}
 
-	// create a timestamp if incoming event doesn't have one
+	// Create a timestamp if incoming event doesn't have one
 	this.timeStamp = src && src.timeStamp || Date.now();
 
 	// Mark it as fixed
@@ -8556,7 +8556,7 @@ jQuery.each( {
 	}
 }, jQuery.event.addProp );
 
-// create mouseenter/leave events using mouseover/out and event-time checks
+// Create mouseenter/leave events using mouseover/out and event-time checks
 // so that event delegation works in jQuery.
 // Do the same for pointerenter/pointerleave and pointerover/pointerout
 //
@@ -11762,7 +11762,7 @@ function ajaxConvert( s, response, jqXHR, isSuccess ) {
 		// Work with a copy of dataTypes in case we need to modify it for conversion
 		dataTypes = s.dataTypes.slice();
 
-	// create converters map with lowercased keys
+	// Create converters map with lowercased keys
 	if ( dataTypes[ 1 ] ) {
 		for ( conv in s.converters ) {
 			converters[ conv.toLowerCase() ] = s.converters[ conv ];
@@ -11983,7 +11983,7 @@ jQuery.extend( {
 			// uncached part of the url
 			uncached,
 
-			// create the final options object
+			// Create the final options object
 			s = jQuery.ajaxSetup( {}, options ),
 
 			// Callbacks context
@@ -12642,7 +12642,7 @@ jQuery.ajaxTransport( function( options ) {
 					};
 				}
 
-				// create the abort callback
+				// Create the abort callback
 				callback = callback( "abort" );
 
 				try {
@@ -13150,7 +13150,7 @@ jQuery.fn.extend( {
 	}
 } );
 
-// create scrollLeft and scrollTop methods
+// Create scrollLeft and scrollTop methods
 jQuery.each( { scrollLeft: "pageXOffset", scrollTop: "pageYOffset" }, function( method, prop ) {
 	var top = "pageYOffset" === prop;
 
@@ -13204,7 +13204,7 @@ jQuery.each( [ "top", "left" ], function( i, prop ) {
 } );
 
 
-// create innerHeight, innerWidth, height, width, outerHeight and outerWidth methods
+// Create innerHeight, innerWidth, height, width, outerHeight and outerWidth methods
 jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
 	jQuery.each( { padding: "inner" + name, content: type, "": "outer" + name },
 		function( defaultExtra, funcName ) {
@@ -13821,7 +13821,7 @@ module.exports = function xhrAdapter(config) {
 var enhanceError = __webpack_require__(23);
 
 /**
- * create an Error with the specified message, config, error code, request and response.
+ * Create an Error with the specified message, config, error code, request and response.
  *
  * @param {string} message The error message.
  * @param {Object} config The config.
@@ -15351,7 +15351,7 @@ if (token) {
   /*--------------------------------------------------------------------------*/
 
   /**
-   * create a new pristine `lodash` function using the `context` object.
+   * Create a new pristine `lodash` function using the `context` object.
    *
    * @static
    * @memberOf _
@@ -15376,7 +15376,7 @@ if (token) {
    * lodash.isFunction(lodash.bar);
    * // => true
    *
-   * // create a suped-up `defer` in Node.js.
+   * // Create a suped-up `defer` in Node.js.
    * var defer = _.runInContext({ 'setTimeout': setImmediate }).defer;
    */
   var runInContext = (function runInContext(context) {
@@ -29490,7 +29490,7 @@ if (token) {
      * _.map(users, _.iteratee('user'));
      * // => ['barney', 'fred']
      *
-     * // create custom iteratee shorthands.
+     * // Create custom iteratee shorthands.
      * _.iteratee = _.wrap(_.iteratee, function(iteratee, func) {
      *   return !_.isRegExp(func) ? iteratee(func) : function(string) {
      *     return func.test(string);
@@ -35082,7 +35082,7 @@ var Axios = __webpack_require__(20);
 var defaults = __webpack_require__(2);
 
 /**
- * create an instance of Axios
+ * Create an instance of Axios
  *
  * @param {Object} defaultConfig The default config for the instance
  * @return {Axios} A new instance of Axios
@@ -35100,7 +35100,7 @@ function createInstance(defaultConfig) {
   return instance;
 }
 
-// create the default instance to be exported
+// Create the default instance to be exported
 var axios = createInstance(defaults);
 
 // Expose Axios class to allow class inheritance
@@ -35168,7 +35168,7 @@ var InterceptorManager = __webpack_require__(29);
 var dispatchRequest = __webpack_require__(30);
 
 /**
- * create a new instance of Axios
+ * Create a new instance of Axios
  *
  * @param {Object} instanceConfig The default config for the instance
  */
@@ -36105,7 +36105,7 @@ function hasOwn (obj, key) {
 }
 
 /**
- * create a cached version of a pure function.
+ * Create a cached version of a pure function.
  */
 function cached (fn) {
   var cache = Object.create(null);
@@ -40820,7 +40820,7 @@ function initComputed$1 (Comp) {
 
 function initAssetRegisters (Vue) {
   /**
-   * create asset registration methods.
+   * Create asset registration methods.
    */
   ASSET_TYPES.forEach(function (type) {
     Vue[type] = function (
@@ -47129,7 +47129,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     function installReadyStateChangeImplementation() {
         var html = doc.documentElement;
         registerImmediate = function(handle) {
-            // create a <script> element; its readystatechange event will be fired asynchronously once it is inserted
+            // Create a <script> element; its readystatechange event will be fired asynchronously once it is inserted
             // into the document. Do so, thus queuing up the task. Remember to clean up once it's been called.
             var script = doc.createElement("script");
             script.onreadystatechange = function () {

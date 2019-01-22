@@ -16,11 +16,11 @@ class CreateScheduleTable extends Migration
     {
         Schema::create('schedule', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('time');
-            $table->string('date');
-            $table->unsignedInteger('service_id');
-            $table->unsignedInteger('user_id');
-            $table->unsignedInteger('client_id');
+            $table->string('time')->nullable();
+            $table->string('date')->nullable();
+            $table->unsignedInteger('service_id')->nullable();
+            $table->unsignedInteger('user_id')->nullable();
+            $table->unsignedInteger('client_id')->nullable();
             $table->foreign('service_id')
                 ->references('id')
                 ->on('services');
